@@ -66,6 +66,7 @@ return {
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         ["<leader>a"] = { "<Plug>SlimeParagraphSend", desc = "Send to Termina" },
         ["<leader>r"] = { "<cmd>ToggleTerm direction=float<cr> cargo run<cr>", desc = "Rust - Cargo Run" },
+        -- ["<leader>\\"] = { "<cmd>normal! I//<cr>", desc = "Comment Yew" },
       },
       t = {
         -- setting a mapping to false will disable it

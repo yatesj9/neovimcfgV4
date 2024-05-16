@@ -11,5 +11,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   { import = "astrocommunity.pack.clojure" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
+  -- { import = "astrocommunity.comment.mini-comment" },
 }
