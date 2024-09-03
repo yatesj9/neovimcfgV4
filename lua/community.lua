@@ -15,4 +15,5 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
+  { import = "astrocommunity.motion.nvim-surround"},
 }
