@@ -65,23 +65,25 @@ return {
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         ["<leader>a"] = { "<Plug>SlimeParagraphSend", desc = "Send to Termina" },
-        -- 
+        --
         -- ["<leader>r"] = { "<cmd>ToggleTerm direction=float<cr> cargo run<cr>", desc = "Rust - Cargo Run" },
-        -- 
+        --
         -- ["<leader>r"] = {
         --   "<cmd>ToggleTerm direction=float<cr> cd Build<cr> cmake .. -G Ninja <cr> ninja <cr> ./main <cr>",
         --   desc = "C++ Ninja Build",
         -- },
         --
-        ["<leader>r"] = {desc = "C++ Build"},
+        ["<leader>r"] = { desc = "C++ Build" },
         ["<leader>rb"] = {
-        "<cmd>ToggleTerm direction=float<cr> cd Build<cr> cmake .. -G Ninja <cr> ninja <cr> ./main <cr>",
-        desc = "CMAKE - Build for Ninja",
+          "<cmd>ToggleTerm direction=float<cr> cd Build<cr> cmake .. -G Ninja <cr> ninja <cr> ./main <cr>",
+          desc = "CMAKE - Build for Ninja",
         },
-       ["<leader>rr"] = {
-        "<cmd>ToggleTerm direction=float<cr>cd Build <cr> ninja <cr> ./main <cr>",
-        desc = "Ninja - Build and Run",
+        ["<leader>rr"] = {
+          "<cmd>ToggleTerm direction=float<cr>cd Build <cr> ninja <cr> ./main <cr>",
+          desc = "Ninja - Build and Run",
         },
+        ["<leader>ru"] = { "<cmd>ToggleTerm direction=float<cr> cargo run<cr>", desc = "Rust - Cargo Run" },
+
         --
         -- ["<leader>\\"] = { "<cmd>normal! I//<cr>", desc = "Comment Yew" },
       },
