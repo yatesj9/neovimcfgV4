@@ -49,7 +49,7 @@ return {
         -- navigate buffer tabs with `H` and `L`
         L = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         H = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
-
+        K = { function() vim.lsp.buf.hover() end, desc = "LSP Hover Documentation",},
         -- mappings seen under group name "Buffer"
         ["<Leader>bD"] = {
           function()
@@ -83,7 +83,7 @@ return {
           desc = "Ninja - Build and Run",
         },
         ["<leader>ru"] = { "<cmd>ToggleTerm direction=float<cr> cargo run<cr>", desc = "Rust - Cargo Run" },
-
+        ["<leader>k"] = { function() vim.lsp.buf.hover() end,desc = "Hover documentation"},
         --
         -- ["<leader>\\"] = { "<cmd>normal! I//<cr>", desc = "Comment Yew" },
       },
